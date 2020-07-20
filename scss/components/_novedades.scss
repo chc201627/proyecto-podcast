@@ -1,0 +1,39 @@
+.novedades{
+    @include clip-path(10%,0,100%,100%);
+    font-family: IBMPlexSans;
+    font-weight: 400;
+    height: 330px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media(tablet){
+        height: 518px;
+        @include clip-path(35%,0,100%,100%);
+    }
+
+    &__title{
+      
+        color: $colorSecundario;
+        margin-bottom: 25px;
+        margin-left: 10px;
+        text-align: center;
+        @include media(tablet){
+            margin-top: 40px;
+        }
+        p{
+            font-size: 36px;
+            @include media(tablet){
+                font-weight: 400;
+                font-size: 48px;
+            }
+        }
+    }
+    &__button{
+        @extend boton;
+    }
+   
+    
+}

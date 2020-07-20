@@ -1,0 +1,29 @@
+boton{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 9px;
+    width: 288px;
+    height: 48px;
+    font-size: 16px;
+    letter-spacing: 0;
+   
+    line-height: 22px;
+    background-color: $colorBoton;
+
+  
+    a{
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: $colorPrimario;
+    }
+    &:hover{
+       background: linear-gradient($botonGradiente); 
+       a{
+        color: $colorSecundario;
+       }
+    }
+}

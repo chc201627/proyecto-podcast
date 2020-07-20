@@ -1,0 +1,4 @@
+@mixin clip-path($topleft,$topright,$bottomleft,$bottomright){
+    clip-path: polygon(0% $topleft, 100% $topright, 100%  $bottomright, 0% $bottomleft);
+    background-image: linear-gradient($grandiente);
+}

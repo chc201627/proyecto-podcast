@@ -1,0 +1,40 @@
+.nosotros{
+    
+    @include media(tablet){
+        @include display-grid;
+        @include grid-template-columns(1fr 1fr);
+        @include grid-template-rows(430px);
+}
+    
+    &__images{
+        position: relative;
+        top: -80px;
+        height: 519px;
+        margin: 0 auto;
+        text-align: center;
+        @include media(tablet){
+           
+        }
+        img{
+            width: 320px;
+        }
+    }
+    &__description{
+        width: 90%;
+        margin: 0 auto;
+        @include media(tablet){
+            margin-top: 30px;
+            align-self: flex-start;
+        }
+    h2{
+        letter-spacing: 0;
+        line-height: 42px;
+    }
+    p{
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-top:15px ;
+    }
+    
+}
+}

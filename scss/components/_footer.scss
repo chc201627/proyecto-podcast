@@ -1,0 +1,40 @@
+.footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    @include media(tablet){
+        font-size: 16px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__description{
+        
+        margin-bottom: 15px;
+        p{
+            @include media(tablet){
+                font-size: 16px;
+                margin-left: 15px;
+            }
+        }
+
+    }
+    &__social{
+        a{
+           
+            display: inline-block;
+            margin: 0px 12px;
+            color: $colorPrimario;
+            i{
+                @include media(tablet){
+                    margin-right: 15px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+// Variables y globales
+@import "libs/variables";
+@import "libs/globals";
+@import "libs/mixin";
+@import "libs/grids";
+@import "libs/breakpoints";
+
+// Componentes
+@import "components/boton";
+@import "components/main";
+@import "components/intro";
+@import "components/menu";
+@import "components/episodios";
+@import "components/nosotros";
+@import "components/invitados";
+@import "components/topicos";
+@import "components/novedades";
+@import "components/footer";

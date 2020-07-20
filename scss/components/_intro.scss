@@ -1,0 +1,39 @@
+.intro{
+
+    @include  media(tablet) {
+        margin-top: 70px;
+        margin-left: 200px;
+    }
+    &__title{
+        width: 70%;
+        margin-left: 5%;
+        line-height: 40px;
+        h1{
+            @include  media(tablet) {
+                font-size: 64px;
+
+                } 
+        } 
+        span{
+            text-decoration: line-through;
+        }
+    
+    }
+    &__description{
+        width: 85%;
+        height: 66px;
+        margin: 15px 0px;
+        margin-left: 5%;
+        
+        @include  media(tablet) {
+            width: 43.6%;
+        }
+    }
+    &__button{
+            margin: 15px 0px;
+            margin-left: 5%;
+            @extend boton;
+
+        
+    }
+}
